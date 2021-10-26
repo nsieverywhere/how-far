@@ -2,7 +2,7 @@ import './App.css';
 import Landing from 'Pages/Landing/Landing';
 import Header from 'Components/Header';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import Profile from "Pages/Profile/profile"
+import Homepage from "Pages/Home/homepage"
 
 function App() {
   return (
@@ -14,8 +14,8 @@ function App() {
           <Route exact path="/">
               <Landing />
           </Route>
-          <Route path="/profile">
-            <Profile />
+          <Route path="/home">
+            <Homepage />
           </Route>
         </Switch>
       </Router>
